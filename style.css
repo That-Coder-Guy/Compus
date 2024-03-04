@@ -1,0 +1,98 @@
+/* @author Henry Glenn */
+:root {
+    --royal_purple: rgb(81, 40, 136);
+    --gray: rgb(167, 167, 167);
+}
+
+.circle {
+    margin: 10%;
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    background-image: radial-gradient(circle at center, white 0%, var(--royal_purple) 70%);
+    border-style: solid;
+    border-width: medium;
+    border-color: var(--gray);
+    border-radius: 50%;
+}
+
+.arrow {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rounded-container,
+.start-button,
+.dropdown {
+    width: 100%;
+    font-size: 14pt;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: medium;
+    border-color: var(--gray);
+    border-radius: 5pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.error-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14pt;
+}
+
+p {
+    margin: 2pt;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+    text-align: left;
+    color: white;
+    width: 40%;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden-view {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    width: 85%;
+}
+
+.form-layout>* {
+    margin: 5pt;
+}
+
+.dropdown {
+    height: 30pt;
+}
+
+.dropdown>option {
+    color: white;
+}
+
+html,
+body {
+    overflow: hidden;
+    background-color: var(--royal_purple);
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    height: 100%;
+    width: 100%;
+}

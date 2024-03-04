@@ -1,0 +1,59 @@
+<!-- @author Henry Glenn -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compus</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" type="image/png" href="favicon.png">
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="error-view" class="hidden-view">
+        <p class="error-message">Incompatible Device</p>
+    </div>
+
+    <div id="compass-view" class="hidden-view">
+        <div class="form-layout">
+            <div class="rounded-container">
+                <p>Early Access Preview</p>
+            </div>
+            <div id="compass-face" class="circle">
+                <img id="compass-arrow" title="Compass arrow" class="arrow" src="compus.png">
+            </div>
+            <select id="location-select" class="dropdown" aria-label="Locations">
+                <option disabled selected value label="Select Destination"></option>
+            </select>
+            <div class="rounded-container">
+                <table class>
+                    <tr>
+                        <td>Latitude:</td>
+                        <td id="latitude">0°0"0'</td>
+                    </tr>
+                    <tr>
+                        <td>Longitude:</td>
+                        <td id="longitude">0°0"0'</td>
+                    </tr>
+                    <tr>
+                        <td>Direction:</td>
+                        <td id="heading">0°</td>
+                    </tr>
+                    <tr>
+                        <td>Distance:</td>
+                        <td id="distance">0m</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rounded-container">
+                <p id="refresh-timer">No destination selected</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
