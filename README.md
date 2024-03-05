@@ -22,17 +22,3 @@ To use Compus:
 2. Choose a building from the alphabetized catalog.
 3. Follow the directional arrow to navigate to the selected building.
 4. Enjoy confident and hassle-free campus navigation!
-
-## Contributing
-
-Contributions to Compus are welcome and encouraged! To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and ensure they adhere to the project's coding standards.
-4. Test your changes thoroughly.
-5. Submit a pull request, detailing the changes made and any related issues.
-
-## License
-
-Compus is licensed under the [MIT License](https://opensource.org/licenses/MIT).
