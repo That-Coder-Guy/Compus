@@ -2,13 +2,19 @@
 
 ## Description
 
-Compus is a mobile web app designed to assist users in navigating large university campuses with ease. Inspired by the challenges of finding buildings on the Kansas State University campus, Compus provides an intuitive directional arrow similar to a compass, guiding users to their desired campus locations. 
+Compus is a mobile web app designed to assist users in navigating large university campuses with ease. As a freshman at Kansas State University, I found that navigating campus to find certain buildings could be extremely difficult even with help from the map boards dispersed around campus. Compus solves this issue by providing an intuitive directional arrow similar to a compass, guiding users to their desired campus locations.
 
-With Compus, users can select any building from an alphabetized catalog, eliminating the confusion often associated with traditional campus maps. Once a building is selected, the app displays a directional arrow pointing towards the chosen destination based on the user's current location. This approach ensures users can navigate confidently without being overwhelmed by excessive information.
+The web app includes all the buildings for a particular campus in an alphabetized catalog from which the user can choose a building to navigate to. This simplified approach ensures users are presented with only relevant information, reducing confusion and simplifying the navigation process. Once a building is selected, Compus displays a directional arrow that points in the direction of the chosen destination based on the user's current location.
+
+Compus is a lightweight static single-page website consisting of only three code files and two image assets. Because of this, the web app is extremely lightweight, and the only external dependency is the geolocational services provided by almost every mobile smartphone. Once the Compus website is loaded by the user, it will stay on their browser even if the internet connection is lost unless the user reloads the page.
+
+**Note:** Currently, there is an issue with the incompatibility screen on desktop devices. The web app is optimized for mobile devices, so users may experience layout issues on desktop devices.
+
+**Note:** The web app has not been thoroughly tested on Android devices. Users may encounter unexpected behavior or performance issues on Android devices.
 
 ## Installation
 
-Compus is a lightweight static single-page website consisting of only three code files and two image assets. To install and use Compus:
+To install and use Compus:
 
 1. Download or clone the repository.
 2. Host the files on a web server or deploy the website to your preferred hosting service.
