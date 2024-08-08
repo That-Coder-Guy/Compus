@@ -205,7 +205,7 @@ class App {
         };
 
         // Display compass if device is compatible
-        if (isCompatible && (isIOS || isAndroid || debug)) {
+        if (isCompatible && !isAndroid && (isIOS || debug)) {
             // Populate destination selection drowdown with predefined location names and values
             this.populateDropdown(locationDropdown, locations);
 
