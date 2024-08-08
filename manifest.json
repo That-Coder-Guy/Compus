@@ -1,0 +1,16 @@
+{
+  "name": "Kansas State University Compus",
+  "short_name": "KSU Compus",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "A compass for the Kansas State University campus.",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "./images/icon.jpg",
+      "sizes": "660x660",
+      "type": "image/png"
+    }
+  ]
+}

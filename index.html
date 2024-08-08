@@ -4,70 +4,93 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <title>Compus</title>
-    <link rel="icon" type="image/png" href="./images/favicon.png">
-    <link rel="apple-touch-icon" type="image/png" href="./images/favicon.png">
+    <link rel="icon" type="image/png" href="./images/icon.jpg">
+    <link rel="stylesheet" href="./style.css?v=1" type="text/css">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link href="./style.css?v=1" rel="stylesheet" type="text/css">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="manifest" href="./manifest.json">
 </head>
 
 <body>
-    <div id="compass-view" class="view"> 
-        <div class="portrait-content">
-            <div class="stack-layout">
-                <img id="bottom-background-buffer" class="background-image" src="./images/default.jpeg"/>
-                <img id="top-background-buffer" class="background-image opacity-fade"/>
-                <div style="display: flex;">
-                    <div class="centered-layout">
-                        <div class="rounded-container">
-                            <p>Early Access Preview</p>
-                        </div>
-                        <div class="outer-circle">
-                            <div id="compass-face" class="inner-circle">
-                                <img id="compass-arrow" title="Compass arrow" class="arrow" src="./images/compus.png">
+    <div id="compatible-device-content" class="view"> 
+        <div class="standalone-content">
+            <div class="portrait-content">
+                <div class="stack-layout">
+                    <img id="bottom-background-buffer" class="background-image" src="./images/default.jpeg"/>
+                    <img id="top-background-buffer" class="background-image opacity-fade"/>
+                    <div style="display: flex;">
+                        <div class="centered-layout safe-area">
+                            <div class="rounded-container blurred">
+                                <p>Early Access Preview</p>
                             </div>
-                        </div>
-                        <select id="location-select" class="dropdown" aria-label="Locations">
-                            <option disabled selected value label="Select Destination"></option>
-                        </select>
-                        <div class="rounded-container">
-                            <table>
-                                <tr>
-                                    <td>Latitude:</td>
-                                    <td id="latitude">0°0"0'</td>
-                                </tr>
-                                <tr>
-                                    <td>Longitude:</td>
-                                    <td id="longitude">0°0"0'</td>
-                                </tr>
-                                <tr>
-                                    <td>Direction:</td>
-                                    <td id="heading">0°</td>
-                                </tr>
-                                <tr>
-                                    <td>Distance:</td>
-                                    <td id="distance">0m</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="rounded-container">
-                            <p id="refresh-timer">No destination selected</p>
+                            <div class="outer-circle blurred">
+                                <div id="compass-face" class="inner-circle">
+                                    <img id="compass-arrow" title="Compass arrow" class="arrow" src="./images/arrow.png">
+                                </div>
+                            </div>
+                            <select id="location-select" class="dropdown blurred" aria-label="Locations">
+                                <option disabled selected value label="Select Destination"></option>
+                            </select>
+                            <div class="rounded-container blurred">
+                                <table>
+                                    <tr>
+                                        <td>Latitude:</td>
+                                        <td id="latitude">0°0"0'</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Longitude:</td>
+                                        <td id="longitude">0°0"0'</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Direction:</td>
+                                        <td id="heading">0°</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Distance:</td>
+                                        <td id="distance">0m</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="rounded-container blurred">
+                                <p id="refresh-timer">No destination selected</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="landscape-content">
+                <img class="rotate-image" src="./images/rotate.png">
+            </div>
         </div>
-        <div class="landscape-content">
-            <img class="rotate-image" src="./images/rotate.png">
+        <div class="browser-content safe-area">
+            <div class="centered-layout blurred">
+                <div class="rounded-container blurred">
+                    <p>
+                       Lorem ipsum odor amet, consectetuer adipiscing elit.
+                       Velit nullam odio ridiculus finibus, proin velit suscipit.
+                       Maecenas metus hac fusce massa lectus. Ornare suspendisse
+                       blandit aptent quisque nibh enim leo purus. Proin est
+                       vulputate suspendisse ultricies vel gravida? Non fermentum
+                       enim odio cursus sem libero rutrum curae efficitur. Nulla
+                       commodo risus nisi pellentesque, neque aliquam. Ad orci
+                       posuere taciti mi; vestibulum eget ullamcorper volutpat.
+                       Iaculis euismod dui sem class nisi, iaculis gravida ipsum.
+                       Maximus augue augue arcu venenatis finibus
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="error-view" class="view">
-        <div class="centered-layout">
+    <div id="incompatible-device-content" class="view">
+        <div class="centered-layout blurred">
             <p class="message">Incompatible Device</p>
         </div>
     </div>
+    
     <script src="./script.js"></script>
 </body>
-
+    
 </html>
