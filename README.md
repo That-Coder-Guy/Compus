@@ -24,7 +24,7 @@ To install and use Compus:
 
 To use Compus:
 
-1. Visit the deployed web app URL: [Compus Web App](https://people.cs.ksu.edu/~hglenn2/)
+1. Visit the deployed web app URL: [Compus Web App](https://people.cs.ksu.edu/~hglenn2/compus/)
 2. Choose a building from the alphabetized catalog.
 3. Follow the directional arrow to navigate to the selected building.
 4. Enjoy confident and hassle-free campus navigation!
